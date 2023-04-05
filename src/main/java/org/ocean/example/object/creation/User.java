@@ -11,7 +11,7 @@ import java.util.logging.Logger;
 
 public class User {
     private static final Logger LOGGER = Logger.getLogger(User.class.getName());
-    private static User instance = null;
+    private static volatile User instance = null;
 
     String name;
     int age;
