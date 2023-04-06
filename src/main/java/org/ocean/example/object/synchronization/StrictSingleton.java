@@ -12,6 +12,10 @@ public class StrictSingleton {
 
     }
 
+    /**
+     * Utilizing double check lock pattern
+     * @return
+     */
     public static StrictSingleton getInstance() {
         if (instance == null) {
             synchronized(StrictSingleton.class) {
